@@ -154,9 +154,9 @@ a:focus-visible {
     gap: clamp(48px, 9vw, 128px);
     min-height: 670px;
     padding-block: 74px 110px;
-    background-image:
+    /* background-image:
         linear-gradient(rgba(37, 57, 0, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(37, 57, 0, 0.035) 1px, transparent 1px);
+        linear-gradient(90deg, rgba(37, 57, 0, 0.035) 1px, transparent 1px); */
     background-position: 0 0;
     background-size: 48px 48px;
 }
