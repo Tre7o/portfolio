@@ -8,6 +8,11 @@
     <title>Suubi John Trevor | Software Engineer</title>
     <link rel="icon" href="../T7 logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- fontawesome icons -->
+    <link href="../fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../fontawesome/css/solid.css" rel="stylesheet">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -68,6 +73,30 @@
 
             <div class="project-grid">
                 <article class="project-card project-featured">
+                    <div class="project-art pharmacy-art" aria-hidden="true">
+                        <span class="art-label">PHARMACY / OPERATIONS</span>
+                        <div class="pharmacy-board">
+                            <div class="pharmacy-board-heading"><span>STOCK OVERVIEW</span><i></i></div>
+                            <div class="pharmacy-stats"><i></i><i></i></div>
+                            <div class="pharmacy-stock"><i></i><i></i><i></i></div>
+                        </div>
+                        <span class="art-coordinate">04 / INVENTORY</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title-line">
+                            <p class="project-type">Backend · Web application</p>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3>Pharmacy Inventory Management System</h3>
+                        <p>A web-based system for managing medicines, suppliers, purchases, and sales, with role-based access for pharmacy teams.</p>
+                        <p class="project-contribution">Tracks stock by batch and expiry, deducts sales using FIFO, and supports low-stock alerts and inventory reporting.</p>
+                        <ul class="tech-list" aria-label="Technologies used">
+                            <li>Spring Boot</li><li>Thymeleaf</li><li>PostgreSQL</li><li>Docker</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
                     <div class="project-art hotel-art" aria-hidden="true">
                         <span class="art-label">HOTEL SENATS</span>
                         <div class="hotel-mark"><span>H</span><i></i><i></i><i></i></div>
@@ -84,27 +113,6 @@
                         <ul class="tech-list" aria-label="Technologies used">
                             <li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>Docker</li>
                         </ul>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-art movie-art" aria-hidden="true">
-                        <span class="art-label">MOVIE APP / 2024</span>
-                        <div class="movie-screen"><span>NOW<br>SHOWING</span><i></i><i></i><i></i></div>
-                        <span class="art-coordinate">03 / ANDROID</span>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title-line">
-                            <p class="project-type">Mobile · Android</p>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <h3>Movie App</h3>
-                        <p>An Android application that retrieves and displays movie information from the TMDB API, structured with MVVM.</p>
-                        <p class="project-contribution"><strong>Built with</strong> Retrofit, TMDB API, and MVVM.</p>
-                        <ul class="tech-list" aria-label="Technologies used">
-                            <li>Android</li><li>Retrofit</li><li>MVVM</li>
-                        </ul>
-                        <a class="project-link" href="https://github.com/Tre7o/movie_app" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
                     </div>
                 </article>
 
@@ -242,7 +250,20 @@
                 </div>
                 <div class="contact-actions">
                     <a class="button button-dark" href="mailto:suubijohntrevor@gmail.com">Email me <span aria-hidden="true">↗</span></a>
-                    <a class="contact-secondary" href="https://www.linkedin.com/in/john-trevor-0730701a6" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+                    <div class="contact-social-group">
+                        <p class="contact-social-label">Find me on</p>
+                        <nav class="contact-socials" aria-label="Social profiles">
+                            <a class="contact-social-link contact-social-linkedin" href="https://www.linkedin.com/in/john-trevor-0730701a6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a class="contact-social-link contact-social-instagram" href="https://www.instagram.com/tre7one" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a class="contact-social-link contact-social-x" href="https://x.com/Tre7on" target="_blank" rel="noopener noreferrer" aria-label="X">
+                                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                            </a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </section>

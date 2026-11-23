@@ -44,10 +44,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-::selection {
+/* ::selection {
     background: var(--primary);
     color: var(--text);
-}
+} */
 
 a {
     color: inherit;
@@ -119,8 +119,7 @@ a:focus-visible {
 
 .site-nav a:hover,
 .back-to-top:hover,
-.text-link:hover,
-.contact-secondary:hover {
+.text-link:hover {
     color: var(--text-secondary);
 }
 
@@ -266,14 +265,12 @@ h1 span,
 
 .button span,
 .text-link span,
-.project-link span,
-.contact-secondary span {
+.project-link span {
     font-size: 1.1rem;
 }
 
 .text-link,
-.project-link,
-.contact-secondary {
+.project-link {
     font-size: 0.82rem;
     font-weight: 800;
     text-decoration-thickness: 1px;
@@ -549,6 +546,76 @@ h1 span,
 
 .hotel-mark i:nth-of-type(3) {
     bottom: 28px;
+}
+
+.pharmacy-art {
+    background:
+        linear-gradient(90deg, transparent 49.8%, rgba(238, 238, 238, 0.08) 50%, transparent 50.2%),
+        linear-gradient(transparent 49.8%, rgba(238, 238, 238, 0.08) 50%, transparent 50.2%),
+        #17332f;
+    background-size: 40px 40px;
+}
+
+.pharmacy-board {
+    position: relative;
+    z-index: 1;
+    width: min(230px, 68%);
+    padding: 15px;
+    border: 1px solid rgba(238, 238, 238, 0.36);
+    background: rgba(13, 30, 27, 0.82);
+}
+
+.pharmacy-board-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: rgba(238, 238, 238, 0.76);
+    font-size: 0.5rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.pharmacy-board-heading i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+.pharmacy-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.pharmacy-stats i {
+    height: 29px;
+    border: 1px solid rgba(238, 238, 238, 0.14);
+    background: linear-gradient(90deg, rgba(8, 203, 0, 0.55) 40%, rgba(238, 238, 238, 0.13) 40%);
+}
+
+.pharmacy-stats i:last-child {
+    background: linear-gradient(90deg, rgba(8, 203, 0, 0.35) 68%, rgba(238, 238, 238, 0.13) 68%);
+}
+
+.pharmacy-stock {
+    display: grid;
+    gap: 5px;
+}
+
+.pharmacy-stock i {
+    height: 3px;
+    background: linear-gradient(90deg, rgba(238, 238, 238, 0.48) 72%, rgba(238, 238, 238, 0.12) 72%);
+}
+
+.pharmacy-stock i:nth-child(2) {
+    background: linear-gradient(90deg, rgba(8, 203, 0, 0.82) 52%, rgba(238, 238, 238, 0.12) 52%);
+}
+
+.pharmacy-stock i:nth-child(3) {
+    background: linear-gradient(90deg, rgba(238, 238, 238, 0.48) 84%, rgba(238, 238, 238, 0.12) 84%);
 }
 
 .signify-art {
@@ -1002,10 +1069,10 @@ h1 span,
 
 .contact-section {
     overflow: hidden;
-    background-color: var(--primary);
+    background-color: #111b16;
     background-image:
-        linear-gradient(rgba(37, 57, 0, 0.07) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(37, 57, 0, 0.07) 1px, transparent 1px);
+        linear-gradient(rgba(238, 238, 238, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(238, 238, 238, 0.045) 1px, transparent 1px);
     background-size: 44px 44px;
 }
 
@@ -1018,21 +1085,22 @@ h1 span,
 }
 
 .contact-inner .eyebrow {
-    color: var(--text-secondary);
+    color: var(--primary);
 }
 
 .contact-inner h2 {
     font-size: clamp(2.8rem, 5vw, 4.6rem);
+    color: var(--secondary);
 }
 
 .contact-inner h2 span {
-    color: var(--text-secondary);
+    color: var(--primary);
 }
 
 .contact-copy {
     max-width: 470px;
     margin: 20px 0 0;
-    color: var(--text-secondary);
+    color: rgba(238, 238, 238, 0.72);
     font-size: 0.9rem;
 }
 
@@ -1047,16 +1115,73 @@ h1 span,
 
 .button-dark {
     min-width: 180px;
-    background: var(--text);
-    color: var(--secondary);
+    background: var(--primary);
+    color: var(--text);
 }
 
 .button-dark:hover {
-    background: var(--text-secondary);
+    background: #b6f2b2;
 }
 
-.contact-secondary {
-    color: var(--text);
+.contact-social-group {
+    display: grid;
+    gap: 9px;
+}
+
+.contact-social-label {
+    margin: 0;
+    color: rgba(238, 238, 238, 0.72);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(238, 238, 238, 0.3);
+    border-radius: 50%;
+    color: var(--secondary);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.contact-social-link:hover,
+.contact-social-link:focus-visible {
+    transform: translateY(-2px);
+    background: #fff;
+}
+
+.contact-social-link:focus-visible {
+    outline-color: var(--primary);
+}
+
+.contact-social-linkedin:hover,
+.contact-social-linkedin:focus-visible {
+    border-color: #0a66c2;
+    color: #0a66c2;
+}
+
+.contact-social-instagram:hover,
+.contact-social-instagram:focus-visible {
+    border-color: #e4405f;
+    color: #e4405f;
+}
+
+.contact-social-x:hover,
+.contact-social-x:focus-visible {
+    border-color: #000;
+    color: #000;
 }
 
 .site-footer {
